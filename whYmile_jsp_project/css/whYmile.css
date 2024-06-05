@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+.container {
+	display: grid;
+	grid-template-rows: 1fr 45px;
+	grid-template-areas: 'chatArea' 'inputArea';
+}
+
+.chatArea {
+	grid-area: chatArea;
+	padding-bottom: 30px;
+}
+
+.inputArea {
+	grid-area: inputArea;
+	text-align: -webkit-right; /* -webkit- 접두사 : 크롬, 사파리계열, 엣지에서만 적용됨 */
+}
+
+.messageArea {
+	display: grid;
+	grid-template-columns: 640px 60px;
+	grid-template-areas: 'user_input user_inputBtn';
+	width : 700px;
+}
+
+.user_input {
+	grid-area: user_input;
+	text-align: left;
+}
+
+.user_inputBtn {
+	grid-area: user_inputBtn;
+	text-align: center;
+}
+
+.whYmile-div {
+	height: auto;
+	padding: 10px 0 10px 0;
+	display: flex;
+	flex-basis: 100%;
+    flex-grow: 0;
+    max-width: 85%; 
+    margin-left: unset; 
+    margin-right: auto;
+}
+
+.whYmile {
+	color: #353535;
+	font-weight: bold;
+	word-wrap: break-word; 
+	word-break: break-all;
+	/*  */
+	width: auto;
+	height: auto;
+	background: #FFE400;
+	border-radius: 50px;
+	text-align: left;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	padding: 13px 20px 13px 20px;
+	white-space: pre-line;
+}
+
+.user-div {
+	height: auto;
+	padding: 10px 0 10px 0;
+	display: flex;
+	flex-basis: 100%;
+    flex-grow: 0;
+    max-width: 85%; 
+    margin-left: auto; 
+    margin-right: unset;
+    flex-direction: row-reverse;
+}
+
+.user {
+	color: #EAEAEA;
+	font-weight: bold;
+	word-wrap: break-word; 
+	word-break: break-all;
+	width: auto;
+	height: auto;
+	background: #4C4C4C;
+	border-radius: 50px;
+	text-align: left;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	padding: 13px 20px 13px 20px;
+	white-space: pre-line;
+}
+
+.col-lg-12 {
+	max-width: 500px;
+}
+
+.user_input > input {
+	width: 640;
+	height: 45px;
+}
+
+.user_inputBtn > button {
+	width: 60px; 
+	height: 45px;
+}
